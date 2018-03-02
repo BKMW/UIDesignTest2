@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="UIDesignTest2.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UIDesignTest2.UWP"
+    RequestedTheme="Light">
+
+</Application>

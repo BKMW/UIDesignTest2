@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UIDesignTest2.MasterPage"
+             BackgroundColor="#514c50"
+             Title="Master">
+
+    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" >
+        <Image Source="logo.png" Margin="0,10,0,100"></Image>
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+            <StackLayout Orientation="Vertical"  WidthRequest="100" >
+                <Image Source="user.png" WidthRequest="20" HeightRequest="20" Margin="8,0,8,8"></Image>
+                <Image Source="shop.png" WidthRequest="20" HeightRequest="20" Margin="8,8,8,8"></Image>
+                <Image Source="faq.png" WidthRequest="20" HeightRequest="20" Margin="8,8,8,8"></Image>
+                <Image Source="notification.png" WidthRequest="20" HeightRequest="20" Margin="8,8,8,8"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" >
+                <Label Text="My ACCOUNT" FontSize="18" TextColor="#fffcff"></Label>
+                <BoxView HeightRequest="1" Color="#fffcff" Margin="0,4,0,0"></BoxView>
+                <Label Text="SHOP"  FontSize="18" TextColor="#fffcff"></Label>
+                <BoxView HeightRequest="1" Color="#fffcff" Margin="0,4,0,0"></BoxView>
+                <Label Text="FAQ" FontSize="18" TextColor="#fffcff"></Label>
+                <BoxView HeightRequest="1" Color="#fffcff" Margin="0,4,0,0"></BoxView>
+                <Label Text="NOTIFICATION" FontSize="18" TextColor="#fffcff"></Label>
+                <BoxView HeightRequest="1" Color="#fffcff" Margin="0,4,0,0"></BoxView>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"  Padding="35,150,0,30" HorizontalOptions="FillAndExpand" >
+            <Image Source="logout.png" HorizontalOptions="Start" Margin="0,0,20,0"></Image>
+            <Label Text="LOGOUT" FontSize="18" TextColor="#fffcff"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
