@@ -2370,7 +2370,7 @@ namespace UIDesignTest2.Droid
 			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int faq = 2130837595;
+			public const int FAQIcon = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
 			public const int ic_audiotrack_dark = 2130837596;
@@ -2910,7 +2910,7 @@ namespace UIDesignTest2.Droid
 			public const int logo = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int logout = 2130837775;
+			public const int LogOut = 2130837775;
 			
 			// aapt resource value: 0x7f020110
 			public const int mr_button_connected_dark = 2130837776;
@@ -2973,10 +2973,10 @@ namespace UIDesignTest2.Droid
 			public const int mr_vol_type_audiotrack_light = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int navigation_empty_icon = 2130837796;
+			public const int MyAccountIcon = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int notification = 2130837797;
+			public const int navigation_empty_icon = 2130837797;
 			
 			// aapt resource value: 0x7f020126
 			public const int notification_action_background = 2130837798;
@@ -3012,19 +3012,19 @@ namespace UIDesignTest2.Droid
 			public const int notification_tile_bg = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int notify_panel_notification_icon_bg = 2130837807;
+			public const int NotifIcon = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int shop = 2130837808;
+			public const int notify_panel_notification_icon_bg = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int tooltip_frame_dark = 2130837809;
+			public const int ShopIcon = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int tooltip_frame_light = 2130837810;
+			public const int tooltip_frame_dark = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int user = 2130837811;
+			public const int tooltip_frame_light = 2130837811;
 			
 			static Drawable()
 			{

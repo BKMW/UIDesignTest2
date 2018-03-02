@@ -15,6 +15,40 @@ namespace UIDesignTest2
 		public Page1 ()
 		{
 			InitializeComponent ();
-		}
+
+            ListView1.ItemsSource = new string[]
+	        {
+	            "My ACCOUNT",
+	            "SHOP",
+	            "FAQ",
+	            "NOTIFICATIONS"
+
+	        };
+            Detail=new MyAccount();
+	    }
+
+	    private void ListView1_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+	    {
+	        if (ListView1.SelectedItem.Equals("My ACCOUNT"))
+	        {
+                Detail=new MyAccount();
+	            IsPresented = false;
+	        }
+	        else if (ListView1.SelectedItem.Equals("SHOP"))
+            {
+                Detail = new Shop();
+                IsPresented = false;
+            }
+            else if (ListView1.SelectedItem.Equals("FAQ"))
+            {
+                Detail = new FAQ();
+                IsPresented = false;
+            }
+	        else
+	        {
+	            Detail = new Notification();
+                IsPresented = false;
+            }
+	    }
+    }
 	}
-}

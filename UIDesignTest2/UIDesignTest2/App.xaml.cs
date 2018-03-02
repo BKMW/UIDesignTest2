@@ -12,10 +12,10 @@ namespace UIDesignTest2
 		public App ()
 		{
 			InitializeComponent();
-            //MainPage = new UIDesignTest2.MasterPage2();
-            MainPage = new NavigationPage(new UIDesignTest2.Page1())
+       
+        MainPage = new NavigationPage(new UIDesignTest2.Page1())
             {
-                BarBackgroundColor = Color.FromHex("#514c50")
+                BarBackgroundColor = Color.FromHex("#d4ad47")
             };
         }
 

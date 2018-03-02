@@ -4,7 +4,6 @@
              x:Class="UIDesignTest2.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
-
-	</Application.Resources>
+	   
+    </Application.Resources>
 </Application>

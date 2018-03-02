@@ -2,19 +2,43 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   x:Class="UIDesignTest2.Page1"
-                  xmlns:pages="clr-namespace:UIDesignTest2">
+                  xmlns:pages="clr-namespace:UIDesignTest2"
+                  >
 
 
     <MasterDetailPage.Master>
-        <pages:MasterPage x:Name="Master" />
+        <ContentPage Title="Master" BackgroundColor="#443d42" >
+            <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" Padding="0,0,0,50">
+                <Image Source="logo.png"></Image>
+                <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand" >
+                    <StackLayout Orientation="Vertical" Padding="0,10,0,0" WidthRequest="80" >
+                        <Image Source="MyAccountIcon.png"  WidthRequest="35"></Image>
+                        <Image Source="ShopIcon.png" WidthRequest="35"></Image>
+                        <Image Source="FAQIcon.png"  WidthRequest="35"></Image>
+                        <Image Source="NotifIcon.png" WidthRequest="35"></Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand" >
+                        <ListView x:Name="ListView1" SeparatorColor="#fffcff" ItemSelected="ListView1_OnItemSelected">
+                            <ListView.ItemTemplate >
+                                <DataTemplate>
+                                 
+                                    <TextCell  TextColor="#fffcff"  Text="{Binding .} "/>
+                                    
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  Padding="20,50,0,35" HorizontalOptions="FillAndExpand">
+                    <Image Source="LogOut.png" HorizontalOptions="Start" WidthRequest="30"></Image>
+                    <Label Text="LOGOUT" FontSize="16" TextColor="#fffcff" />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
     </MasterDetailPage.Master>
 
 
     <MasterDetailPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <pages:DetailPage />
-            </x:Arguments>
-        </NavigationPage>
+        
     </MasterDetailPage.Detail>
 </MasterDetailPage>
