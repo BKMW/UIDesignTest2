@@ -15,6 +15,14 @@ namespace UIDesignTest2
 		public MasterPage ()
 		{
 			InitializeComponent ();
-		}
+		    //ListView1.ItemsSource = new string[]
+		    //{
+		    //    "My acount",
+		    //    "Shop",
+		    //    "FAQ",
+		    //    "Notifications"
+
+		    //};
+        }
 	}
 }
