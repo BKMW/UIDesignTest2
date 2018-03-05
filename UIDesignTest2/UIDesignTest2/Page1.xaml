@@ -23,7 +23,6 @@
                                 <DataTemplate>
                                  
                                     <TextCell  TextColor="#fffcff"  Text="{Binding .} "/>
-                                    
                                 </DataTemplate>
                             </ListView.ItemTemplate>
                         </ListView>
@@ -39,6 +38,6 @@
 
 
     <MasterDetailPage.Detail>
-        
+
     </MasterDetailPage.Detail>
 </MasterDetailPage>

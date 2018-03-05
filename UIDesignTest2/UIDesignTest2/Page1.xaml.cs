@@ -12,10 +12,11 @@ namespace UIDesignTest2
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Page1 : MasterDetailPage
 	{
+
 		public Page1 ()
 		{
 			InitializeComponent ();
-
+		    
             ListView1.ItemsSource = new string[]
 	        {
 	            "My ACCOUNT",

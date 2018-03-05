@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UIDesignTest2.MyAccount">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Bisque">
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+       <StackLayout >
+           <SearchBar x:Name="SearchFor"
+                      Placeholder="search for"
+                      />
+
+            <ListView x:Name="ListView2" SeparatorColor="Gold" IsPullToRefreshEnabled="true">
+                    <ListView.ItemTemplate >
+                        <DataTemplate>
+                            <TextCell  Text="{Binding .} "/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

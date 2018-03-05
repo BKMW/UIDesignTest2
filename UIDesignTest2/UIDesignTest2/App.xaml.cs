@@ -12,11 +12,9 @@ namespace UIDesignTest2
 		public App ()
 		{
 			InitializeComponent();
-       
-        MainPage = new NavigationPage(new UIDesignTest2.Page1())
-            {
-                BarBackgroundColor = Color.FromHex("#d4ad47")
-            };
+
+            //MainPage = new NavigationPage(new UIDesignTest2.Page1())
+		    MainPage = new UIDesignTest2.Shop();
         }
 
 		protected override void OnStart ()
