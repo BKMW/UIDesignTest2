@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UIDesignTest2
 {
-    class Product
+    public class Product
     {
         public string Designation { get; set; }
         public string Status { get; set; }

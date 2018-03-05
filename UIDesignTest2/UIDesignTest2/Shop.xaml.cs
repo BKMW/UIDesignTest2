@@ -12,33 +12,57 @@ namespace UIDesignTest2
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Shop : ContentPage
 	{
-		public Shop ()
-		{
-			InitializeComponent ();
-		    ListProducts.ItemsSource = new List<Product>
+	    public List <Product> tempdata;
+
+        public Shop()
+	    {
+	        InitializeComponent();
+	        data();
+	        ListProducts.ItemsSource = tempdata;
+
+	    }
+	    void data()
+	    {
+
+	        tempdata=  new List<Product>
 		    {
 		        new Product
 		        {
 		            Designation = "Gucci Hand Bag Light Brown",
 		            Status = "Almost New",
 		            Price = "3000.00 SAR",
-		            Image = "http://lorempixel.com/400/200/sports/"
+		            Image = "img1.png"
 		        },
 		        new Product
 		        {
-		            Designation = "Gucci Hand Bag Light Brown",
+		            Designation = "SSSSSSSSSSSSSSSSSSSS",
 		            Status = "Almost New",
 		            Price = "3000.00 SAR",
-		            Image = "http://lorempixel.com/400/200/sports/"
-		        },
+		            Image = "img2.png"
+                },
 		        new Product
 		        {
-		            Designation = "Gucci Hand Bag Light Brown",
+		            Designation = "XXXXXXXXXXXXXXXXXX",
 		            Status = "Almost New",
 		            Price = "3000.00 SAR",
-		            Image = "http://lorempixel.com/400/200/sports/"
-		        }
+		            Image = "img3.png"
+                }
 		    };
 		}
-	}
+
+	    private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+	    {
+	        //thats all you need to make a search  
+
+	        if (string.IsNullOrEmpty(e.NewTextValue))
+	        {
+	            ListProducts.ItemsSource = tempdata;
+	        }
+
+	        else
+	        {
+	            ListProducts.ItemsSource = tempdata.Where(x => x.Designation.ToLower().Contains(e.NewTextValue.ToLower()));
+	        }
+	    }
+    }
 }

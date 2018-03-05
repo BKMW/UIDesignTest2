@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesignTest2.iOS", "UIDesi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesignTest2.UWP", "UIDesignTest2\UIDesignTest2.UWP\UIDesignTest2.UWP.csproj", "{1E736ED0-62C2-4AAF-9B7B-5260FBEFB318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesignTest2", "UIDesignTest2\UIDesignTest2\UIDesignTest2.csproj", "{A08D6C94-B919-4E33-AB2B-679080CD6A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIDesignTest2", "UIDesignTest2\UIDesignTest2\UIDesignTest2.csproj", "{A08D6C94-B919-4E33-AB2B-679080CD6A14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

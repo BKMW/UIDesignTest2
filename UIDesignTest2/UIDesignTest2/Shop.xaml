@@ -3,24 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UIDesignTest2.Shop"
              BackgroundColor="DarkGray">
-    <ContentPage.Content>
-            <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand" Margin="10,10,10,10"  BackgroundColor="White">
-                <SearchBar x:Name="SearchFor"
-                           Placeholder="search for"
-                />
+    
+        <StackLayout Orientation="Vertical" >
+
+            <StackLayout Orientation="Horizontal"    BackgroundColor="#443e42">
+                <StackLayout BackgroundColor="#dcb34a" WidthRequest="60" HeightRequest="60"><Image Source="add.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image></StackLayout>
+                <Label Text="Search"  TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       FontSize="18"></Label>
+               
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical"   Margin="10,10,10,0"  BackgroundColor="White" HeightRequest="100">
+                <Label Text="Search"  TextColor="#44454a" 
+                       FontSize="16"></Label>
+                <SearchBar x:Name="SearchBar" TextColor="Black" 
+                           TextChanged="SearchBar_TextChanged"         />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Vertical"   Margin="10,10,10,0" VerticalOptions="Fill" >
+            <ListView x:Name="ListProducts"  HasUnevenRows="True"   BackgroundColor="DarkGray" VerticalOptions="Fill">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical"  BackgroundColor="White" >
+                                <StackLayout Orientation="Horizontal" >
+                                    <Image Source="{Binding Image}" />
+                                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand"
+                                                 Orientation="Vertical">
+                                        <Label Text="{Binding Designation}"
+                                           TextColor="#44454a" 
+                                               FontSize="18" />
+                                        <Label Text="{Binding Status}"
+                                           TextColor="Gray" Margin="0,5,0,5"/>
+                                        <Label Text="{Binding Price}"
+                                           TextColor="#44454a"
+                                           FontSize="20" Margin="0,5,0,5"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+            
+            
 
         </StackLayout>
-        <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand" Margin="10,10,10,10"  BackgroundColor="White">
-            <ListView x:Name="ListProducts" HasUnevenRows="True"  RowHeight="50">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
 
-                        <ImageCell Text="{Binding Designation}" Detail="{Binding Status}" ImageSource="{Binding Image}"/>
-
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-
-                </ListView>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+   
+</ContentPage> 
